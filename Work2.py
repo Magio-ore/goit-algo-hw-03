@@ -23,5 +23,3 @@ print(get_numbers_ticket(1, 100, 200))  # quantity більше ніж різн�
 print(get_numbers_ticket(100, 1, 6))    # min більше або рівне max
 print(get_numbers_ticket(1, 100, -5))   # quantity менше або рівне нулю
 print(get_numbers_ticket('1', 100, 6))  # min не є цілим числом
-print(get_numbers_ticket(1, '100', 6))  # max не є цілим числом
-print(get_numbers_ticket(1, 100, '6'))  # quantity не є цілим числом

@@ -1,9 +1,10 @@
 import datetime
 
-date = datetime.date(year=2023, month=7, day=3)
+date = "2023-07-03"
 
 def get_days_from_today(date):
     try:
+        date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
         date_now = datetime.date.today()
         difference = date_now.toordinal() - date.toordinal()
         return difference
@@ -13,5 +14,5 @@ def get_days_from_today(date):
 
 print (get_days_from_today(date))
 
-invalid_date = "2023-07-03"
+invalid_date = datetime.date(year=1290, month=3, day=1)
 print(get_days_from_today(invalid_date))
